@@ -31,7 +31,7 @@ var dollarArray = [];
         for (var i = 0; i < noOfDrops; i++) {
             var dollarObj = new Object();
             dollarObj["image"] =  new Image();
-			dollarObj.image.src = 'http://scottygotdemoney.xyz/img/dollar.png';
+			dollarObj.image.src = 'img/dollar.png';
                 
             dollarObj["x"] = Math.random() * 600;
             dollarObj["y"] = -25;
