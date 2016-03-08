@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0;}
+
+body, html { height:100%; }
+
+#canvas {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: #85bb65;
+    z-index: 1;
+}
+#face {
+	position:absolute;
+	width: 20%;
+	z-index: 3;
+	
+	top: 40%;
+    left: 40%;
+    margin-right: -60%;
+    /*transform: translate(-40%, -40%);*/
+    
+    animation: face-rotate infinite linear 0.5s;
+    -webkit-animation: face-rotate infinite linear 0.5s;
+}
+
+@keyframes face-rotate {
+    0% {transform: rotate(7deg)}
+    50% {transform: rotate(-7deg)}
+    100% {transform: rotate(7deg)}
+}
+
+@-webkit-keyframes face-rotate {
+    0% {-webkit-transform: rotate(7deg)}
+    50% {-webkit-transform: rotate(-7deg)}
+    100% {-webkit-transform: rotate(7deg)}
+}
